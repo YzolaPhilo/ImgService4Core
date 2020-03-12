@@ -27,8 +27,9 @@ public partial class ImgParameter : TBase
 {
   private string _materialName;
   private string _floor;
-  private string _sn;
-  private string _slice;
+  private string _lotNum;
+  private int _sn;
+  private int _slice;
   private int _width;
   private int _height;
 
@@ -58,7 +59,20 @@ public partial class ImgParameter : TBase
     }
   }
 
-  public string Sn
+  public string LotNum
+  {
+    get
+    {
+      return _lotNum;
+    }
+    set
+    {
+      __isset.lotNum = true;
+      this._lotNum = value;
+    }
+  }
+
+  public int Sn
   {
     get
     {
@@ -71,7 +85,7 @@ public partial class ImgParameter : TBase
     }
   }
 
-  public string Slice
+  public int Slice
   {
     get
     {
@@ -116,6 +130,7 @@ public partial class ImgParameter : TBase
   {
     public bool materialName;
     public bool floor;
+    public bool lotNum;
     public bool sn;
     public bool slice;
     public bool width;
@@ -166,7 +181,7 @@ public partial class ImgParameter : TBase
           case 3:
             if (field.Type == TType.String)
             {
-              Sn = await iprot.ReadStringAsync(cancellationToken);
+              LotNum = await iprot.ReadStringAsync(cancellationToken);
             }
             else
             {
@@ -174,9 +189,9 @@ public partial class ImgParameter : TBase
             }
             break;
           case 4:
-            if (field.Type == TType.String)
+            if (field.Type == TType.I32)
             {
-              Slice = await iprot.ReadStringAsync(cancellationToken);
+              Sn = await iprot.ReadI32Async(cancellationToken);
             }
             else
             {
@@ -186,7 +201,7 @@ public partial class ImgParameter : TBase
           case 5:
             if (field.Type == TType.I32)
             {
-              Width = await iprot.ReadI32Async(cancellationToken);
+              Slice = await iprot.ReadI32Async(cancellationToken);
             }
             else
             {
@@ -194,6 +209,16 @@ public partial class ImgParameter : TBase
             }
             break;
           case 6:
+            if (field.Type == TType.I32)
+            {
+              Width = await iprot.ReadI32Async(cancellationToken);
+            }
+            else
+            {
+              await TProtocolUtil.SkipAsync(iprot, field.Type, cancellationToken);
+            }
+            break;
+          case 7:
             if (field.Type == TType.I32)
             {
               Height = await iprot.ReadI32Async(cancellationToken);
@@ -245,29 +270,38 @@ public partial class ImgParameter : TBase
         await oprot.WriteStringAsync(Floor, cancellationToken);
         await oprot.WriteFieldEndAsync(cancellationToken);
       }
-      if (Sn != null && __isset.sn)
+      if (LotNum != null && __isset.lotNum)
       {
-        field.Name = "sn";
+        field.Name = "lotNum";
         field.Type = TType.String;
         field.ID = 3;
         await oprot.WriteFieldBeginAsync(field, cancellationToken);
-        await oprot.WriteStringAsync(Sn, cancellationToken);
+        await oprot.WriteStringAsync(LotNum, cancellationToken);
         await oprot.WriteFieldEndAsync(cancellationToken);
       }
-      if (Slice != null && __isset.slice)
+      if (__isset.sn)
       {
-        field.Name = "slice";
-        field.Type = TType.String;
+        field.Name = "sn";
+        field.Type = TType.I32;
         field.ID = 4;
         await oprot.WriteFieldBeginAsync(field, cancellationToken);
-        await oprot.WriteStringAsync(Slice, cancellationToken);
+        await oprot.WriteI32Async(Sn, cancellationToken);
+        await oprot.WriteFieldEndAsync(cancellationToken);
+      }
+      if (__isset.slice)
+      {
+        field.Name = "slice";
+        field.Type = TType.I32;
+        field.ID = 5;
+        await oprot.WriteFieldBeginAsync(field, cancellationToken);
+        await oprot.WriteI32Async(Slice, cancellationToken);
         await oprot.WriteFieldEndAsync(cancellationToken);
       }
       if (__isset.width)
       {
         field.Name = "width";
         field.Type = TType.I32;
-        field.ID = 5;
+        field.ID = 6;
         await oprot.WriteFieldBeginAsync(field, cancellationToken);
         await oprot.WriteI32Async(Width, cancellationToken);
         await oprot.WriteFieldEndAsync(cancellationToken);
@@ -276,7 +310,7 @@ public partial class ImgParameter : TBase
       {
         field.Name = "height";
         field.Type = TType.I32;
-        field.ID = 6;
+        field.ID = 7;
         await oprot.WriteFieldBeginAsync(field, cancellationToken);
         await oprot.WriteI32Async(Height, cancellationToken);
         await oprot.WriteFieldEndAsync(cancellationToken);
@@ -308,14 +342,21 @@ public partial class ImgParameter : TBase
       sb.Append("Floor: ");
       sb.Append(Floor);
     }
-    if (Sn != null && __isset.sn)
+    if (LotNum != null && __isset.lotNum)
+    {
+      if(!__first) { sb.Append(", "); }
+      __first = false;
+      sb.Append("LotNum: ");
+      sb.Append(LotNum);
+    }
+    if (__isset.sn)
     {
       if(!__first) { sb.Append(", "); }
       __first = false;
       sb.Append("Sn: ");
       sb.Append(Sn);
     }
-    if (Slice != null && __isset.slice)
+    if (__isset.slice)
     {
       if(!__first) { sb.Append(", "); }
       __first = false;

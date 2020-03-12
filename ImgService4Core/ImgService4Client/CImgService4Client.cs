@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 using System.Net;
 using System.Threading;
 using Thrift;
@@ -7,8 +8,8 @@ using Thrift.Transports;
 using Thrift.Transports.Client;
 
 namespace ImgService4Client {
-    public class CImgService4Client {
-        public async System.Threading.Tasks.Task<bool> core4transferAsync(string ipaddress, byte[] imgPtr, string materialName, string floor, string sn, string slice, int width, int height) {
+    public static class CImgService4Client {
+        public static async System.Threading.Tasks.Task<bool> core4transferAsync(string ipaddress, byte[] imgPtr, string materialName, string floor, string lotNum, Int32 sn, Int32 slice, Int32 width, Int32 height) {
             CancellationToken token = new CancellationToken();
             TClientTransport _transport = new TSocketClientTransport(IPAddress.Parse(ipaddress), 31280);
             TProtocol _protocol = new TBinaryProtocol(_transport);
@@ -19,15 +20,17 @@ namespace ImgService4Client {
                 ImgParameter _param = new ImgParameter() {
                     MaterialName = materialName,
                     Floor = floor,
+                    LotNum = lotNum,
                     Sn = sn,
                     Slice = slice,
                     Width = width,
                     Height = height
                 };
-                _client.ImgStreamTransferAsync(imgPtr, _param, token);
-                return true;
+                ResponseCode code = _client.ImgStreamTransferAsync(imgPtr, _param, token).Result.Code;
+                return code == ResponseCode.SUCCESS;
             }
             catch (TApplicationException e) {
+                Debug.WriteLine(e.Message);
                 return false;
             }
             finally {

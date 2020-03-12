@@ -5,8 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ImgService4ClientTests"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="200" Width="400">
     <Grid>
-
+        <Button Name="SendImg" Content="发送图像" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="60" Width="60" Click="SendImg_OnClick"/>
+        <Button x:Name="MSendImg" Content="连续发送" HorizontalAlignment="Left" Margin="10,75,0,0" VerticalAlignment="Top" Height="60" Width="60" Click="MSendImg_OnClick"/>
+        <TextBox Name="ipaddr" HorizontalAlignment="Left" Margin="80,23,0,0" Text="172.16.85.40" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
     </Grid>
 </Window>
