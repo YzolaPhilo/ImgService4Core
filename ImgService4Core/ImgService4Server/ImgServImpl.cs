@@ -9,10 +9,11 @@ namespace ImgService4Server {
     public class CImgServImpl : ImgService.IAsync {
 
         Logger logger = LogManager.GetLogger("*");
-        public Task<InvokeResult> ImgStreamTransferAsync(byte[] imgPtr, string jsonParam, CancellationToken cancellationToken = default) {
+
+        public Task<InvokeResult> ImgStreamTransferAsync(byte[] imgPtr, ImgParameter param, CancellationToken cancellationToken) {
             return Task.Run(() => {
                 InvokeResult result = new InvokeResult();
-                logger.Info(imgPtr.Length + ", " + jsonParam);
+                logger.Info(imgPtr.Length + ", " + param.Width * param.Height);
                 return result;
             });
         }

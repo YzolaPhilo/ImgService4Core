@@ -26,7 +26,7 @@ public partial class ImgService
 {
   public interface IAsync
   {
-    Task<InvokeResult> ImgStreamTransferAsync(byte[] imgPtr, string jsonParam, CancellationToken cancellationToken);
+    Task<InvokeResult> ImgStreamTransferAsync(byte[] imgPtr, ImgParameter param, CancellationToken cancellationToken);
 
   }
 
@@ -39,13 +39,13 @@ public partial class ImgService
 
     public Client(TProtocol inputProtocol, TProtocol outputProtocol) : base(inputProtocol, outputProtocol)    {
     }
-    public async Task<InvokeResult> ImgStreamTransferAsync(byte[] imgPtr, string jsonParam, CancellationToken cancellationToken)
+    public async Task<InvokeResult> ImgStreamTransferAsync(byte[] imgPtr, ImgParameter param, CancellationToken cancellationToken)
     {
       await OutputProtocol.WriteMessageBeginAsync(new TMessage("ImgStreamTransfer", TMessageType.Call, SeqId), cancellationToken);
       
       var args = new ImgStreamTransferArgs();
       args.ImgPtr = imgPtr;
-      args.JsonParam = jsonParam;
+      args.Param = param;
       
       await args.WriteAsync(OutputProtocol, cancellationToken);
       await OutputProtocol.WriteMessageEndAsync(cancellationToken);
@@ -131,7 +131,7 @@ public partial class ImgService
       var result = new ImgStreamTransferResult();
       try
       {
-        result.Success = await _iAsync.ImgStreamTransferAsync(args.ImgPtr, args.JsonParam, cancellationToken);
+        result.Success = await _iAsync.ImgStreamTransferAsync(args.ImgPtr, args.Param, cancellationToken);
         await oprot.WriteMessageBeginAsync(new TMessage("ImgStreamTransfer", TMessageType.Reply, seqid), cancellationToken); 
         await result.WriteAsync(oprot, cancellationToken);
       }
@@ -157,7 +157,7 @@ public partial class ImgService
   public partial class ImgStreamTransferArgs : TBase
   {
     private byte[] _imgPtr;
-    private string _jsonParam;
+    private ImgParameter _param;
 
     public byte[] ImgPtr
     {
@@ -172,16 +172,16 @@ public partial class ImgService
       }
     }
 
-    public string JsonParam
+    public ImgParameter Param
     {
       get
       {
-        return _jsonParam;
+        return _param;
       }
       set
       {
-        __isset.jsonParam = true;
-        this._jsonParam = value;
+        __isset.param = true;
+        this._param = value;
       }
     }
 
@@ -190,7 +190,7 @@ public partial class ImgService
     public struct Isset
     {
       public bool imgPtr;
-      public bool jsonParam;
+      public bool param;
     }
 
     public ImgStreamTransferArgs()
@@ -225,9 +225,10 @@ public partial class ImgService
               }
               break;
             case 2:
-              if (field.Type == TType.String)
+              if (field.Type == TType.Struct)
               {
-                JsonParam = await iprot.ReadStringAsync(cancellationToken);
+                Param = new ImgParameter();
+                await Param.ReadAsync(iprot, cancellationToken);
               }
               else
               {
@@ -267,13 +268,13 @@ public partial class ImgService
           await oprot.WriteBinaryAsync(ImgPtr, cancellationToken);
           await oprot.WriteFieldEndAsync(cancellationToken);
         }
-        if (JsonParam != null && __isset.jsonParam)
+        if (Param != null && __isset.param)
         {
-          field.Name = "jsonParam";
-          field.Type = TType.String;
+          field.Name = "param";
+          field.Type = TType.Struct;
           field.ID = 2;
           await oprot.WriteFieldBeginAsync(field, cancellationToken);
-          await oprot.WriteStringAsync(JsonParam, cancellationToken);
+          await Param.WriteAsync(oprot, cancellationToken);
           await oprot.WriteFieldEndAsync(cancellationToken);
         }
         await oprot.WriteFieldStopAsync(cancellationToken);
@@ -296,12 +297,12 @@ public partial class ImgService
         sb.Append("ImgPtr: ");
         sb.Append(ImgPtr);
       }
-      if (JsonParam != null && __isset.jsonParam)
+      if (Param != null && __isset.param)
       {
         if(!__first) { sb.Append(", "); }
         __first = false;
-        sb.Append("JsonParam: ");
-        sb.Append(JsonParam);
+        sb.Append("Param: ");
+        sb.Append(Param);
       }
       sb.Append(")");
       return sb.ToString();
