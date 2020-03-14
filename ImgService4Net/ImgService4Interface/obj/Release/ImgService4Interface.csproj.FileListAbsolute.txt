@@ -1,0 +1,11 @@
+F:\YzolaPhilo\1-AOI\ImgService4Net\ImgService4Interface\obj\Release\ImgService4Interface.csprojAssemblyReference.cache
+F:\YzolaPhilo\1-AOI\ImgService4Net\ImgService4Interface\bin\Release\ImgService4Interface.dll.config
+F:\YzolaPhilo\1-AOI\ImgService4Net\ImgService4Interface\bin\Release\ImgService4Interface.dll
+F:\YzolaPhilo\1-AOI\ImgService4Net\ImgService4Interface\bin\Release\ImgService4Interface.pdb
+F:\YzolaPhilo\1-AOI\ImgService4Net\ImgService4Interface\bin\Release\Thrift45.dll
+F:\YzolaPhilo\1-AOI\ImgService4Net\ImgService4Interface\obj\Release\ImgService4Interface.csproj.CopyComplete
+F:\YzolaPhilo\1-AOI\ImgService4Net\ImgService4Interface\obj\Release\ImgService4Interface.dll
+F:\YzolaPhilo\1-AOI\ImgService4Net\ImgService4Interface\obj\Release\ImgService4Interface.pdb
+F:\YzolaPhilo\1-AOI\ImgService4Net\bin\ImgService4Interface.dll.config
+F:\YzolaPhilo\1-AOI\ImgService4Net\bin\ImgService4Interface.dll
+F:\YzolaPhilo\1-AOI\ImgService4Net\bin\ImgService4Interface.pdb

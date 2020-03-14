@@ -1,0 +1,50 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.0": {
+      "ImgService4Client/1.0.0": {
+        "dependencies": {
+          "ImgService4Interface": "1.0.0",
+          "ThriftCore": "0.13.0.0"
+        },
+        "runtime": {
+          "ImgService4Client.dll": {}
+        }
+      },
+      "ImgService4Interface/1.0.0": {
+        "runtime": {
+          "ImgService4Interface.dll": {}
+        }
+      },
+      "ThriftCore/0.13.0.0": {
+        "runtime": {
+          "ThriftCore.dll": {
+            "assemblyVersion": "0.13.0.0",
+            "fileVersion": "0.13.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ImgService4Client/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ImgService4Interface/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ThriftCore/0.13.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "format": 1,
+  "restore": {
+    "F:\\YzolaPhilo\\1-AOI\\ImgService4Core\\ImgService4Core\\ImgService4Client\\ImgService4Client.csproj": {}
+  },
+  "projects": {
+    "F:\\YzolaPhilo\\1-AOI\\ImgService4Core\\ImgService4Core\\ImgService4Client\\ImgService4Client.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\YzolaPhilo\\1-AOI\\ImgService4Core\\ImgService4Core\\ImgService4Client\\ImgService4Client.csproj",
+        "projectName": "ImgService4Client",
+        "projectPath": "F:\\YzolaPhilo\\1-AOI\\ImgService4Core\\ImgService4Core\\ImgService4Client\\ImgService4Client.csproj",
+        "packagesPath": "C:\\Users\\YzolaPhilo\\.nuget\\packages\\",
+        "outputPath": "F:\\YzolaPhilo\\1-AOI\\ImgService4Core\\ImgService4Core\\ImgService4Client\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\YzolaPhilo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.0": {
+            "projectReferences": {
+              "F:\\YzolaPhilo\\1-AOI\\ImgService4Core\\ImgService4Core\\ImgService4Interface\\ImgService4Interface.csproj": {
+                "projectPath": "F:\\YzolaPhilo\\1-AOI\\ImgService4Core\\ImgService4Core\\ImgService4Interface\\ImgService4Interface.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.0": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "F:\\YzolaPhilo\\1-AOI\\ImgService4Core\\ImgService4Core\\ImgService4Interface\\ImgService4Interface.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\YzolaPhilo\\1-AOI\\ImgService4Core\\ImgService4Core\\ImgService4Interface\\ImgService4Interface.csproj",
+        "projectName": "ImgService4Interface",
+        "projectPath": "F:\\YzolaPhilo\\1-AOI\\ImgService4Core\\ImgService4Core\\ImgService4Interface\\ImgService4Interface.csproj",
+        "packagesPath": "C:\\Users\\YzolaPhilo\\.nuget\\packages\\",
+        "outputPath": "F:\\YzolaPhilo\\1-AOI\\ImgService4Core\\ImgService4Core\\ImgService4Interface\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\YzolaPhilo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.0": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

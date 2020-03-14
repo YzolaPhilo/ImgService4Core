@@ -1,0 +1,3 @@
+F:\YzolaPhilo\1-AOI\ImgService4Core\ImgService4Core\ImgService4Interface\obj\Debug\netcoreapp3.1\ImgService4Interface.csprojAssemblyReference.cache
+F:\YzolaPhilo\1-AOI\ImgService4Core\ImgService4Core\ImgService4Interface\obj\Debug\netcoreapp3.1\ImgService4Interface.AssemblyInfoInputs.cache
+F:\YzolaPhilo\1-AOI\ImgService4Core\ImgService4Core\ImgService4Interface\obj\Debug\netcoreapp3.1\ImgService4Interface.AssemblyInfo.cs

@@ -1,0 +1,12 @@
+F:\YzolaPhilo\1-AOI\ImgService4Core\ImgService4Core\ImgService4Client\bin\Release\netcoreapp3.1\ImgService4Client.deps.json
+F:\YzolaPhilo\1-AOI\ImgService4Core\ImgService4Core\ImgService4Client\bin\Release\netcoreapp3.1\ImgService4Client.dll
+F:\YzolaPhilo\1-AOI\ImgService4Core\ImgService4Core\ImgService4Client\bin\Release\netcoreapp3.1\ImgService4Client.pdb
+F:\YzolaPhilo\1-AOI\ImgService4Core\ImgService4Core\ImgService4Client\bin\Release\netcoreapp3.1\ImgService4Interface.dll
+F:\YzolaPhilo\1-AOI\ImgService4Core\ImgService4Core\ImgService4Client\bin\Release\netcoreapp3.1\ImgService4Interface.pdb
+F:\YzolaPhilo\1-AOI\ImgService4Core\ImgService4Core\ImgService4Client\obj\Release\netcoreapp3.1\ImgService4Client.csprojAssemblyReference.cache
+F:\YzolaPhilo\1-AOI\ImgService4Core\ImgService4Core\ImgService4Client\obj\Release\netcoreapp3.1\ImgService4Client.AssemblyInfoInputs.cache
+F:\YzolaPhilo\1-AOI\ImgService4Core\ImgService4Core\ImgService4Client\obj\Release\netcoreapp3.1\ImgService4Client.AssemblyInfo.cs
+F:\YzolaPhilo\1-AOI\ImgService4Core\ImgService4Core\ImgService4Client\obj\Release\netcoreapp3.1\ImgService4Client.csproj.CopyComplete
+F:\YzolaPhilo\1-AOI\ImgService4Core\ImgService4Core\ImgService4Client\obj\Release\netcoreapp3.1\ImgService4Client.dll
+F:\YzolaPhilo\1-AOI\ImgService4Core\ImgService4Core\ImgService4Client\obj\Release\netcoreapp3.1\ImgService4Client.pdb
+F:\YzolaPhilo\1-AOI\ImgService4Core\ImgService4Core\ImgService4Client\bin\Release\netcoreapp3.1\ThriftCore.dll

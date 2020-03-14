@@ -1,0 +1,16 @@
+F:\YzolaPhilo\1-AOI\ImgService4Net\ImgService4Client\bin\Release\ImgService4Client.pdb
+F:\YzolaPhilo\1-AOI\ImgService4Net\ImgService4Client\bin\Release\ImgService4Interface.dll
+F:\YzolaPhilo\1-AOI\ImgService4Net\ImgService4Client\bin\Release\Thrift45.dll
+F:\YzolaPhilo\1-AOI\ImgService4Net\ImgService4Client\bin\Release\ImgService4Interface.pdb
+F:\YzolaPhilo\1-AOI\ImgService4Net\ImgService4Client\bin\Release\ImgService4Interface.dll.config
+F:\YzolaPhilo\1-AOI\ImgService4Net\ImgService4Client\obj\Release\ImgService4Client.csprojAssemblyReference.cache
+F:\YzolaPhilo\1-AOI\ImgService4Net\ImgService4Client\obj\Release\ImgService4Client.csproj.CopyComplete
+F:\YzolaPhilo\1-AOI\ImgService4Net\ImgService4Client\obj\Release\ImgService4Client.pdb
+F:\YzolaPhilo\1-AOI\ImgService4Net\ImgService4Client\bin\Release\ImgService4Client.dll.config
+F:\YzolaPhilo\1-AOI\ImgService4Net\ImgService4Client\bin\Release\ImgService4Client.dll
+F:\YzolaPhilo\1-AOI\ImgService4Net\ImgService4Client\obj\Release\ImgService4Client.dll
+F:\YzolaPhilo\1-AOI\ImgService4Net\ImgService4Client\bin\Release\NLog.dll
+F:\YzolaPhilo\1-AOI\ImgService4Net\ImgService4Client\bin\Release\NLog.xml
+F:\YzolaPhilo\1-AOI\ImgService4Net\bin\Client\ImgService4Client.dll.config
+F:\YzolaPhilo\1-AOI\ImgService4Net\bin\Client\ImgService4Client.dll
+F:\YzolaPhilo\1-AOI\ImgService4Net\bin\Client\ImgService4Client.pdb
