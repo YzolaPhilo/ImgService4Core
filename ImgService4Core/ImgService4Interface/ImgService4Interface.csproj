@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <OutputType>Library</OutputType>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
     <ApplicationIcon />
     <StartupObject />
   </PropertyGroup>
@@ -12,8 +12,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Reference Include="Thrift">
-      <HintPath>..\packages\Thrift.dll</HintPath>
+    <Reference Include="ThriftCore">
+      <HintPath>..\packages\ThriftCore.dll</HintPath>
     </Reference>
   </ItemGroup>
 
